@@ -201,21 +201,29 @@
       cursor: pointer;
     }
 
-    .nav-toggle span {
-      display: block;
-      height: 2px;
-      border-radius: 999px;
-      background: var(--text-main);
-    }
+    .nav-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  background: transparent;        /* white box hatao */
+  border: 1px solid var(--accent); /* halka gold circle */
+  border-radius: 999px;
+  padding: 0;
+  outline: none;
+}
 
-    /* HERO SECTION */
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-      gap: 2.4rem;
-      margin-top: 2rem;
-      align-items: center;
-    }
+.nav-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--text-main);   /* 3 white lines */
+}
 
     .hero-text {
       padding-right: 1rem;
@@ -1642,4 +1650,5 @@
 </body>
 
 </html>
+
 
